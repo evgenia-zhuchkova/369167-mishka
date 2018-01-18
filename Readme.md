@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгения Жучкова](https://up.htmlacademy.ru/adaptive/13/user/369167).
-* Наставник: `Неизвестно`.
+* Наставник: Вадим Новаш (https://up.htmlacademy.ru/adaptive/13/user/8589).
 
 ---
 
