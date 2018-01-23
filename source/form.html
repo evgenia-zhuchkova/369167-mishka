@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+  
+	<header class="page-header">
+	  <a class="page-header__logo">
+	  	<img class="page-header__logo-img" src="#" width="86" height="35" alt="Mishka">
+	  </a>
+	  <nav class="main-nav">
+	  	<button class="main-nav__toggle" type="button">Открыть меню</button>
+		<div class="main-nav__wrapper">
+	  	  <ul class="main-nav__list site-list">
+		  	<li class="site-list__item">
+		  	  <a href="catalog.html">Каталог товаров</a>
+		  	</li>
+		  	<li class="site-list__item">
+		  	  <a href="forma.html">Вязание на заказ</a>
+		  	</li>
+		  </ul>
+		  <ul class="main-nav__list user-list">
+		  	<li class="user-list__item">
+		  	  <a href="#">Поиск по сайту</a>
+		  	</li>
+		  	<li class="user-list__item">
+		  	  <a href="#">Корзина: пока пуста</a>
+		    </li>
+		  </ul>
+		</div>
+	  </nav>
+	</header>
+	
+	<main class="page-main">
+
+	  <section class="request">
+	  	<div class="request_wrapper">
+	  	  <h2 class="request__title">Вязание на заказ</h2>
+		</div>
+	  </section>
+	  
+	  <section class="request-form">
+	  	<div class="request-form__wrapper">
+		  <p class="request-form__text">
+		  	Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+		  </p>
+		  
+		  <fieldset>
+		    <div class="request-form__type type-subitem">
+			  <legend class="request-form__name">Тип</legend>
+			  <ul class="type-subitem__list">
+              	<li class="type-subitem__item">
+                  <input  class="type-subitem__filter" type="radio" name="type" id="type-yes-filter" value="type-yes" checked>
+                  <label for="type-yes-filter">Акссесуар для интерьера</label>
+                </li>
+                <li class="type-subitem__item">
+                  <input  class="type-subitem__filter" type="radio" name="type" id="type-no-filter" value="type-no">
+                  <label for="type-no-filter">Детская игрушка</label>
+                </li>
+              </ul>
+			</div>
+		  </fieldset>
+		  
+		  <fieldset>
+		    <div class="request-form__color color-subitem">
+			  <legend class="request-form__name">Тип</legend>
+			  <ul class="color-subitem__list">
+              	<li class="color-subitem__item">
+				  <input class="color-subitem__filter" type="checkbox" name="white" id="filter-white" checked>
+                  <label for="filter-white">Белый</label>
+				</li>
+				<li class="color-subitem__item">
+				  <input class="color-subitem__filter" type="checkbox" name="grey" id="filter-grey" checked>
+                  <label for="filter-grey">Серый</label>
+				</li>
+				<li class="color-subitem__item">
+				  <input class="color-subitem__filter" type="checkbox" name="tiffani" id="filter-tiffani">
+                  <label for="filter-tiffani">"Тиффани"</label>
+				</li>
+				<li class="color-subitem__item">
+				  <input class="color-subitem__filter" type="checkbox" name="black" id="filter-black">
+                  <label for="filter-black">Черный</label>
+				</li>
+				<li class="color-subitem__item">
+				  <input class="color-subitem__filter" type="checkbox" name="pink" id="filter-pink">
+                  <label for="filter-pink">Розовый</label>
+				</li>
+				<li class="color-subitem__item">
+				  <input class="color-subitem__filter" type="checkbox" name="orange" id="filter-orange">
+                  <label for="filter-orange">Оранжевый</label>
+				</li>
+			  </ul>	
+			</div>
+		  </fieldset>
+		  
+		  <form class="request-form__contacts contacts-data" action="https://echo.htmlacademy.ru" method="post">
+		  	<p class="contacts-data__title">ФИО</p>
+			<p class="contacts-data__fio">
+				<label for="name-write">Имя:</label>
+				<br>
+				<input type="text" name="name" id="name-write" placeholder="Введите ваше имя*">
+			</p>
+			<p class="contacts-data__fio">
+				<label for="surname-write">Фамилия:</label>
+				<br>
+				<input type="text" name="surname" id="surname-write" placeholder="Укажите фамилию*">
+			</p>
+			<p class="contacts-data__fio">
+				<label for="second-name-write">Отчество:</label>
+				<br>
+				<input type="text" name="second-name" id="second-name-write" placeholder="Отчество, если желаете">
+			</p>
+			<p class="contacts-data__title"> ТЕЛ
+				<label for="phone-write"></label>
+				<input type="text" name="phone" id="phone-write" placeholder="+7 XXX XX XX*">
+			</p>
+			<p class="contacts-data__title"> E-MAIL
+				<label for="email-write"></label>
+				<br>
+				<input type="email" name="email" id="email-write" placeholder="Ваш Email*">
+			</p>
+			<p class="contacts-data__title"> ДОП
+				<label for="text-write"></label>
+				<br>
+				<textarea type="text" name="letter-text" id="text-write" rows="10" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+			</p>
+			<p class="contacts-data__note">*Поля обязательны для заполнения</p>
+			<button class="button" type="submit">Отправить заказ</button>
+		  </form>
+		</div>
+	  </section>
+  
+	</main>
+
+  	<footer class="page-footer">
+	  <div class="page-footer__wrapper">
+        <ul class="page-footer__social social__list">
+		  <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/mishka">Мы в Инстаграме</a>
+          </li>
+           <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/mishka">Мы в Фейсбуке</a>
+          </li>
+		  <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://www.twitter.com/mishka">Мы в Твиттере</a>
+          </li>
+        </ul>
+	  	<div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано:</span>
+		  <p class="copyright__link">
+          	<a class="visually-hidden" href="https://htmlacademy.ru/">HTML Academy</a>
+		  </p>
+      	</div>  
+	  </div>
+	</footer>
+
+  </body>
+</html>
