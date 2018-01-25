@@ -5,8 +5,7 @@
 <title>HTML Academy: Мишка</title>
 </head>
 <body>
-<header class="page-header"> 
-	<a class="page-header__logo"> <img class="page-header__logo-img" src="#" width="86" height="35" alt="Mishka"> </a>
+<header class="page-header"> <a class="page-header__logo"> <img class="page-header__logo-img" src="#" width="86" height="35" alt="Mishka"> </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
@@ -92,7 +91,7 @@
       <li class="social__item"> <a class="social__link social__link--twitter" href="https://www.twitter.com/mishka">Мы в Твиттере</a> </li>
     </ul>
     <section class="copyright">
-			<h2 class="visually-hidden">Авторские права</h2>
+      <h2 class="visually-hidden">Авторские права</h2>
       <p class="copyright__text">Разработано:</p>
       <p class="copyright__link"> <a class="visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a> </p>
     </section>
@@ -100,13 +99,26 @@
 </footer>
 <section class="modal">
   <h2 class="modal__bascet">Добавить в корзину</h2>
-  <p class="modal__text">Выберите размер</p>
-  <ul class="modal__size-list">
-    <li class="modal__size-item">S</li>
-    <li class="modal__size-item">M</li>
-    <li class="modal__size-item">L</li>
-  </ul>
-  <button class="modal__add" type="submit">Добавить</button>
+  <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="modal__choice">
+      <legend class="modal__name-choice">Выберите размер</legend>
+      <ul class="modal__size-list">
+        <li class="modal__size-item">
+          <input  class="modal__size-filter" type="radio" name="size-S" id="size-S-yes-filter" value="sizeS-yes" checked>
+          <label for="size-S-yes-filter">S</label>
+        </li>
+        <li class="modal__size-item">
+          <input  class="modal__size-filter" type="radio" name="size-M" id="size-M-no-filter" value="size-M-no" >
+          <label for="size-M-no-filter">M</label>
+        </li>
+        <li class="modal__size-item">
+          <input class="modal__size-filter" type="radio" name="size-L" id="size-L-no-filter" value="size-L-no">
+          <label for="size-L-no-filter">L</label>
+        </li>
+      </ul>
+    </fieldset>
+    <button class="modal__add" type="submit">Добавить</button>
+  </form>
 </section>
 </body>
 </html>
