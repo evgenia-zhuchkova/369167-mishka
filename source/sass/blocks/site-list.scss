@@ -1,26 +1,24 @@
 .site-list {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
-	&__item {
-		display: flex;
-		border-top: 1px solid #ececec;
-		min-height: 78px;
-		align-items: center;
-		width: 320px;	
-	}
-	
-	&__link {
-		font: $font-stack;
-		color: $boldtype-color;
-		font-size: 17px;
-		font-weight: 700;
-		line-height: $line-height;
-		text-decoration: none;
-		display: block;
-		margin-left: 76px;
-	}
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__item {
+    display: flex;
+    border-top: 1px solid #ececec;
+    min-height: 78px;
+    align-items: center;
+    width: 320px;
+  }
+  &__link {
+    font: $font-stack;
+    color: $boldtype-color;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: $line-height;
+    text-decoration: none;
+    display: block;
+    margin-left: 76px;
+  }
 }

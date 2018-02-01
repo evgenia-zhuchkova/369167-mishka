@@ -1,62 +1,57 @@
 .user-list {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
-	&__item-search {
-		position: relative;
-		border-top: 1px solid #ececec;
-		display: flex;
-		min-height: 78px;
-		align-items: center;
-		width: 320px;
-	}
-	
-	&__item-search ::before {
-		content: "";
-		position: absolute;
-		top: 31px;
-		left: 23px;
-		width: 18px;
-		height: 18px;
-		background-image: url("../../img/icon-search.svg");
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		opacity: 0.2;
-	}
-	
-	&__item-cart {
-		position: relative;
-		border-top: 1px solid #ececec;
-		display: flex;
-		min-height: 78px;
-		align-items: center;
-		width: 320px;
-	}
-	
-	&__item-cart ::before {
-		content: "";
-		position: absolute;
-		top: 31px;
-		left: 23px;
-		width: 18px;
-		height: 18px;
-		background-image: url("../../../img/icon-cart.svg");
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		opacity: 0.2;
-	}
-	
-	&__link {
-		font: $font-stack;
-		color: $boldtype-color;
-		font-size: 17px;
-		font-weight: 700;
-		line-height: $line-height;
-		text-decoration: none;
-		display: block;
-		margin-left: 76px;
-	}
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__item-search {
+    position: relative;
+    border-top: 1px solid #ececec;
+    display: flex;
+    min-height: 78px;
+    align-items: center;
+    width: 320px;
+  }
+  &__item-search ::before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 23px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.2;
+  }
+  &__item-cart {
+    position: relative;
+    border-top: 1px solid #ececec;
+    display: flex;
+    min-height: 78px;
+    align-items: center;
+    width: 320px;
+  }
+  &__item-cart ::before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 23px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../../../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.2;
+  }
+  &__link {
+    font: $font-stack;
+    color: $boldtype-color;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: $line-height;
+    text-decoration: none;
+    display: block;
+    margin-left: 76px;
+  }
 }

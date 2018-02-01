@@ -1,33 +1,30 @@
 .main-nav {
-	margin: 0;
+  margin: 0;
   padding: 0;
-	border-bottom: 1px solid $decor-color;
-	position: relative;
-
-	&__toggle {
-		background-image: url("/../../img/icon-menu-open.svg");
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		width: 22px;
-		height: 18px;
-		align-self: center;
-	}
-	
-	&__wrapper {
-		margin: 0;
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		position: absolute;
-		z-index:3;
-		top: 50px;
-		left: -270px;
-		height: 315px;
-		width: 320px;
-	}
-	
-	&__list {
-		list-style: none;
-	}
+  border-bottom: 1px solid $decor-color;
+  position: relative;
+  &__toggle {
+    background-image: url("/../../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 22px;
+    height: 18px;
+    align-self: center;
+  }
+  &__wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index:3;
+    top: 50px;
+    left: -270px;
+    height: 315px;
+    width: 320px;
+  }
+  &__list {
+    list-style: none;
+  }
 }
