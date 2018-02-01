@@ -4,14 +4,14 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
-  
+
   &__wrapper {
     display: flex;
     width: 260px;
     flex-direction: column;
     align-items: center;
   }
-  
+
   &__list {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   &__item {
     list-style: none;
     display: flex;
@@ -28,11 +28,11 @@
     margin-bottom: 30px;
     border: 1px solid $decor-color;
   }
-  
+
   &__photo {
     margin-bottom: 30px;
   }
-  
+
   &__item-text {
     text-decoration: none;
     font-family: $font-stack;
@@ -43,7 +43,7 @@
     margin-left: 28px;
     margin-bottom: 16px;
   }
-  
+
   &__item-parametr {
     font-family: $font-stack;
     font-size: 13px;
@@ -52,8 +52,8 @@
     color: $text-color;
     margin-left: 28px;
     margin-bottom: 50px;
-  
   }
+
   &__item-ordering {
     display: flex;
     flex-direction: row;
@@ -63,7 +63,7 @@
     margin-bottom: 31px;
     margin-left: 28px;
   }
-  
+
   &__item-price {
     font-family: $font-stack;
     font-size: 15px;
@@ -71,7 +71,7 @@
     line-height: $line-height;
     color: $boldtype-color;
   }
-  
+
   &__basket {
     width: 20px;
     height: 19px;

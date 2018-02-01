@@ -4,7 +4,7 @@
   min-width: 320px;
   align-items: center;
   margin-bottom: 70px;
-  
+
   &__wrapper {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@
     width: 260px;
     align-items: flex-start;
   }
-  
+
   &__title {
     padding: 0;
     margin: 0;
@@ -24,7 +24,7 @@
     line-height: 30px;
     margin-bottom: 6px;
   }
-  
+
   &__text {
     font: $font-stack;
     color: #63d1bb;
@@ -33,23 +33,23 @@
     line-height: 20px;
     margin-bottom: 22px;
   }
-  
+
   &__description {
     width: 245px;
     text-align: left;
     white-space: pre-wrap;
     margin-bottom: 38px;
   }
-  
+
   &__features {
     margin-bottom: 28px;
   }
-  
+
   &__img {
     margin-bottom: 27px;
     align-self: center;
   }
-  
+
   &__price {
     align-self: center;
     font: $font-stack;
@@ -59,7 +59,7 @@
     line-height: $line-height;
     margin-bottom: 27px;
   }
-  
+
   &__button {
     text-decoration: none;
     align-self: center;

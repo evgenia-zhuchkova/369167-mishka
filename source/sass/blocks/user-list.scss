@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   &__item-search {
     position: relative;
     border-top: 1px solid #ececec;
@@ -13,7 +13,7 @@
     align-items: center;
     width: 320px;
   }
-  
+
   &__item-search ::before {
     content: "";
     position: absolute;
@@ -26,7 +26,7 @@
     background-position: 0 0;
     opacity: 0.2;
   }
-  
+
   &__item-cart {
     position: relative;
     border-top: 1px solid #ececec;
@@ -35,7 +35,7 @@
     align-items: center;
     width: 320px;
   }
-  
+
   &__item-cart ::before {
     content: "";
     position: absolute;
@@ -48,7 +48,7 @@
     background-position: 0 0;
     opacity: 0.2;
   }
-  
+
   &__link {
     font: $font-stack;
     color: $boldtype-color;

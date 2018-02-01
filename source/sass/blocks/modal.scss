@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
+
   &__bascet {
     font: $font-stack;
     color: $boldtype-color;
@@ -15,11 +15,11 @@
     margin-top: 32px;
     margin-bottom: 20px;
   }
-  
+
   &__choice {
     border: none;
   }
-  
+
   &__name-choice {
     text-align: center;
     font: $font-stack;
@@ -29,7 +29,7 @@
     line-height: $line-height-h2;
     margin-bottom: 28px;
   }
-  
+
   &__size-list {
     margin:0;
     padding:0;
@@ -39,15 +39,15 @@
     width: 260px;
     height: 52px;
   }
-  
+
   &__size-item {
     list-style: none;
   }
-  
+
   &__size-filter {
     margin-right: 7px;
   }
-  
+
   &__size-name {
     font: $font-stack;
     color: $text-color;
@@ -55,7 +55,7 @@
     font-weight: 700;
     line-height: 16px;
   }
-  
+
   &__add {
     margin-left: 15px;
     background-color: $interior-color;

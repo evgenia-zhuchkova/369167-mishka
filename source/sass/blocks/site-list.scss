@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   &__item {
     display: flex;
     border-top: 1px solid #ececec;
@@ -12,7 +12,7 @@
     align-items: center;
     width: 320px;
   }
-  
+
   &__link {
     font: $font-stack;
     color: $boldtype-color;

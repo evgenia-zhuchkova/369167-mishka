@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
+
   &__text {
     font: $font-stack;
     color: $boldtype-color;
@@ -12,7 +12,7 @@
     line-height: 18px;
     margin-right: 42px;
   }
-  
+
   &__link {
     background-image: url("/../../img/logo-htmlacademy.svg");
     width: 27px;

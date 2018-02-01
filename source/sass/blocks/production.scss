@@ -4,7 +4,7 @@
   align-items: center;
   min-width: 320px;
   margin-bottom: 91px;
-  
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     width: 260px;
     border: 1px solid $decor-color;
   }
-  
+
   &__video {
     display: flex;
     flex-direction: row;
@@ -24,7 +24,7 @@
     margin-top: 27px;
     margin-bottom: 27px;
   }
-  
+
   &__title {
     font-family: $font-stack;
     font-size: 17px;
@@ -34,13 +34,13 @@
     margin-left: 90px;
     width: 128px;
   }
-  
+
   &__text {
     width: 128px;
     margin-bottom: 28px;
     margin-left: 6px;
   }
-  
+
   &__order {
     text-decoration: none;
     padding: 17px 24px;
