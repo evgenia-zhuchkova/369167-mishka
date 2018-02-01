@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   width: 260px;
+  
   &__item {
     display:flex;
     flex-direction: row;
@@ -15,6 +16,7 @@
     border-bottom: 1px solid #ececec;
     width: 260px;
   }
+  
   &__text {
     width: 98px;
   }

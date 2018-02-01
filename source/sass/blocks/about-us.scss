@@ -4,11 +4,13 @@
   min-width: 320px;
   align-items: center;
   justify-content: center;
+  
   &__wrapper {
     display: flex;
     flex-direction: column;
     width: 260px;
   }
+  
   &__title {
     margin: 0;
     font: $font-stack;
@@ -19,6 +21,7 @@
     margin-bottom: 31px;
     text-align: left;
   }
+  
   &__list {
     margin: 0;
     padding: 0;
