@@ -1,0 +1,24 @@
+.social {
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	margin-botom: 52px;
+	
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		margin-right:38px;
+	}
+}
+
+@for $i from 1 through length($social-icon) {
+		.social__link--#{$i} {
+			background-image: nth($social-icon, $i);
+			background-repeat: no-repeat;
+			width: 30px;
+			height: 30px;
+			background-position: center;
+	}
+}

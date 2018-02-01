@@ -1,0 +1,30 @@
+.about-us {
+	display: flex;
+	flex-direction: column;
+	min-width: 320px;
+	align-items: center;
+	justify-content: center;
+	
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 260px;
+	}
+	
+	
+	&__title {
+		margin: 0;
+		font: $font-stack;
+		color: $boldtype-color;
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 30px;
+		margin-bottom: 31px;
+		text-align: left;
+	}
+	
+	&__list {
+		margin:0;
+		padding:0;
+	}	
+}

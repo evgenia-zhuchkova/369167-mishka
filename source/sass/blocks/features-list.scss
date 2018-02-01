@@ -1,0 +1,23 @@
+.features-list {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 260px;
+	
+	&__item {
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		min-height: 39px;
+		list-style: none;
+		border-bottom: 1px solid #ececec;
+		width: 260px;
+		}
+	
+	&__text {
+		width: 98px;
+	}	
+}
