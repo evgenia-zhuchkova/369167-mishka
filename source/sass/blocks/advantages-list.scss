@@ -19,8 +19,9 @@
   }
 }
 
-@for $i from 1 through length($advantages-icon) {.advantages-list__item-#{$i} {
-  background-image: nth($advantages-icon, $i);
-  background-repeat: no-repeat;
+@for $i from 1 through length($advantages-icon) {
+  .advantages-list__item-#{$i} {
+    background-image: nth($advantages-icon, $i);
+    background-repeat: no-repeat;
   }
 }
