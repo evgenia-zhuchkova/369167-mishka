@@ -1,0 +1,59 @@
+.variant {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+  &__item-interior {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 103px;
+    background-color: $interior-color;
+    width: 320px;
+  }
+
+  &__img-interior {
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.5;
+    height: 62px;
+    width: 40px;
+    margin-left: 53px;
+  }
+
+  &__item-toys {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 103px;
+    background-color: $toys-color;
+    width: 320px;
+  }
+
+  &__img-toys {
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.5;
+    height: 60px;
+    width: 60px;
+    margin-left: 45px;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    font: $font-stack;
+    color: $boldinterior-color;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: $line-height;
+    width: 130px;
+    margin-left: 30px;
+  }
+}

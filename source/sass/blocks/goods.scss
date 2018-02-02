@@ -1,0 +1,22 @@
+.goods {
+  display: flex;
+  min-width: 320px;
+  justify-content: center;
+  background-color: #f1f1f1;
+
+  &__wrapper {
+    display: flex;
+    width: 260px;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: $font-stack;
+    font-size: $font-size-h2;
+    font-weight: 700;
+    line-height: $line-height-h2;
+    color: $boldtype-color;
+    margin-top: 72px;
+    margin-bottom: 71px;
+  }
+}

@@ -1,0 +1,73 @@
+.modal {
+  display: flex;
+  min-width: 320px;
+  height: 336px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__bascet {
+    font: $font-stack;
+    color: $boldtype-color;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  &__choice {
+    border: none;
+  }
+
+  &__name-choice {
+    text-align: center;
+    font: $font-stack;
+    color: $text-color;
+    font-size: $font-size;
+    font-weight: 400;
+    line-height: $line-height-h2;
+    margin-bottom: 28px;
+  }
+
+  &__size-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 260px;
+    height: 52px;
+  }
+
+  &__size-item {
+    list-style: none;
+  }
+
+  &__size-filter {
+    margin-right: 7px;
+  }
+
+  &__size-name {
+    font: $font-stack;
+    color: $text-color;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+
+  &__add {
+    margin-left: 15px;
+    background-color: $interior-color;
+    border: none;
+    text-decoration: none;
+    padding: 16px 82px;
+    line-height: 16px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 46px;
+  }
+}

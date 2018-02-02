@@ -1,0 +1,27 @@
+.advantages-list {
+  display: flex;
+  width: 260px;
+  flex-direction: column;
+
+  &__item {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font: $font-stack;
+    color: $boldtype-color;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    min-height: 90px;
+    margin-bottom: 33px;
+  }
+}
+
+@for $i from 1 through length($advantages-icon) {
+  .advantages-list__item-#{$i} {
+    background-image: nth($advantages-icon, $i);
+    background-repeat: no-repeat;
+  }
+}

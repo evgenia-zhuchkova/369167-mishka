@@ -1,0 +1,13 @@
+.type-subitem {
+  &__label {
+    font-family: $font-stack;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    color: $boldtype-color;
+  }
+
+  &__item {
+    list-style: none;
+  }
+}

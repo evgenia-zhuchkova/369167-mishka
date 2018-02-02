@@ -3,22 +3,20 @@
 <head>
 <meta charset="utf-8">
 <title>HTML Academy: Мишка</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<header class="page-header"> 
-	<a class="page-header__logo" href="index.html"> 
-		<img class="page-header__logo-img" src="#" width="86" height="35" alt="Mishka"> 
-	</a>
+<header class="page-header"> <a class="page-header__logo" href="index.html"> <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"> </a>
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item"> <a class="site-list__link" href="catalog.html">Каталог товаров</a> </li>
         <li class="site-list__item"> <a class="site-list__link" href="forma.html">Вязание на заказ</a> </li>
       </ul>
       <ul class="main-nav__list user-list">
-        <li class="user-list__item"> <a class="user-list__link" href="#">Поиск по сайту</a> </li>
-        <li class="user-list__item"> <a class="user-list__link" href="#">Корзина: пока пуста</a> </li>
+        <li class="user-list__item-search"> <a class="user-list__link" href="#">Поиск по сайту</a> </li>
+        <li class="user-list__item-cart"> <a class="user-list__link" href="#">Корзина: пока пуста</a> </li>
       </ul>
     </div>
   </nav>
@@ -39,69 +37,69 @@
           <ul class="type-subitem__list">
             <li class="type-subitem__item">
               <input  class="type-subitem__filter" type="radio" name="category-order" id="category-order-yes-filter" value="category-order-yes" checked>
-              <label for="category-order-yes-filter">Акссесуар для интерьера</label>
+              <label class="type-subitem__label" for="category-order-yes-filter">Акссесуар для интерьера</label>
             </li>
             <li class="type-subitem__item">
               <input  class="type-subitem__filter" type="radio" name="category-order" id="category-order-no-filter" value="category-order-no">
-              <label for="category-order-no-filter">Детская игрушка</label>
+              <label class="type-subitem__label" for="category-order-no-filter">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="request-form__color color-subitem">
-          <legend class="request-form__name">Тип</legend>
+          <legend class="request-form__name">Цвет</legend>
           <ul class="color-subitem__list">
             <li class="color-subitem__item">
               <input class="color-subitem__filter" type="checkbox" name="white" id="filter-white" checked>
-              <label for="filter-white">Белый</label>
+              <label class="color-subitem__label" for="filter-white">Белый</label>
             </li>
             <li class="color-subitem__item">
               <input class="color-subitem__filter" type="checkbox" name="grey" id="filter-grey" checked>
-              <label for="filter-grey">Серый</label>
+              <label class="color-subitem__label" for="filter-grey">Серый</label>
             </li>
             <li class="color-subitem__item">
               <input class="color-subitem__filter" type="checkbox" name="tiffani" id="filter-tiffani">
-              <label for="filter-tiffani">"Тиффани"</label>
+              <label class="color-subitem__label" for="filter-tiffani">"Тиффани"</label>
             </li>
             <li class="color-subitem__item">
               <input class="color-subitem__filter" type="checkbox" name="black" id="filter-black">
-              <label for="filter-black">Черный</label>
+              <label class="color-subitem__label" for="filter-black">Черный</label>
             </li>
             <li class="color-subitem__item">
               <input class="color-subitem__filter" type="checkbox" name="pink" id="filter-pink">
-              <label for="filter-pink">Розовый</label>
+              <label class="color-subitem__label" for="filter-pink">Розовый</label>
             </li>
             <li class="color-subitem__item">
               <input class="color-subitem__filter" type="checkbox" name="orange" id="filter-orange">
-              <label for="filter-orange">Оранжевый</label>
+              <label class="color-subitem__label" for="filter-orange">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
         <div class="contacts-data">
           <p class="contacts-data__title">фио</p>
           <p class="contacts-data__fio">
-            <label for="name-write">Имя:</label>
-            <input type="text" name="name" id="name-write" placeholder="Введите ваше имя*">
+            <label class="contacts-data__label" for="name-write">Имя:</label>
+            <input class="contacts-data__example" type="text" name="name" id="name-write" placeholder="Введите ваше имя*">
           </p>
           <p class="contacts-data__fio">
-            <label for="surname-write">Фамилия:</label>
-            <input type="text" name="surname" id="surname-write" placeholder="Укажите фамилию*">
+            <label class="contacts-data__label" for="surname-write">Фамилия:</label>
+            <input class="contacts-data__example" type="text" name="surname" id="surname-write" placeholder="Укажите фамилию*">
           </p>
           <p class="contacts-data__fio">
-            <label for="second-name-write">Отчество:</label>
-            <input type="text" name="second-name" id="second-name-write" placeholder="Отчество, если желаете">
+            <label class="contacts-data__label" for="second-name-write">Отчество:</label>
+            <input class="contacts-data__example" type="text" name="second-name" id="second-name-write" placeholder="Отчество, если желаете">
           </p>
           <p class="contacts-data__title"> тел
-            <input type="tel" name="phone" id="phone-write" placeholder="+7 XXX XX XX*">
+            <input class="contacts-data__example" type="tel" name="phone" id="phone-write" placeholder="+7 XXX XX XX*">
           </p>
           <p class="contacts-data__title"> e-mail
-            <input type="email" name="email" id="email-write" placeholder="Ваш Email*">
+            <input class="contacts-data__example" type="email" name="email" id="email-write" placeholder="Ваш Email*">
           </p>
           <p class="contacts-data__title"> доп
-            <textarea name="letter-text" id="text-write" rows="10" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="contacts-data__dop" name="letter-text" id="text-write" rows="10" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </p>
           <p class="contacts-data__note">*Поля обязательны для заполнения</p>
         </div>
-        <button class="button" type="submit">Отправить заказ</button>
+        <button class="request-form__button button" type="submit">Отправить заказ</button>
       </form>
     </div>
   </section>
@@ -109,9 +107,9 @@
 <footer class="page-footer">
   <div class="page-footer__wrapper">
     <ul class="page-footer__social social">
-      <li class="social__item"> <a class="social__link social__link--instagram" href="https://www.instagram.com/mishka">Мы в Инстаграме</a> </li>
-      <li class="social__item"> <a class="social__link social__link--facebook" href="https://www.facebook.com/mishka">Мы в Фейсбуке</a> </li>
-      <li class="social__item"> <a class="social__link social__link--twitter" href="https://www.twitter.com/mishka">Мы в Твиттере</a> </li>
+      <li class="social__item"> <a class="social__link social__link--1" href="https://www.instagram.com/mishka"><span class="visually-hidden">Мы в Инстаграме</span></a> </li>
+      <li class="social__item"> <a class="social__link social__link--2" href="https://www.facebook.com/mishka"><span class="visually-hidden">Мы в Фейсбуке</span></a> </li>
+      <li class="social__item"> <a class="social__link social__link--3" href="https://www.twitter.com/mishka"> <span class="visually-hidden">Мы в Твиттере</span></a> </li>
     </ul>
     <section class="copyright">
       <h2 class="visually-hidden">Авторские права</h2>

@@ -1,0 +1,72 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  align-items: center;
+  margin-bottom: 40px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    align-items: flex-start;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    font: $font-stack;
+    color: $boldtype-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 39px;
+  }
+
+  &__postal {
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  &__mail {
+    padding: 0;
+    margin: 0;
+    margin-right: 32px;
+  }
+
+  &__email {
+    text-decoration: none;
+    font: $font-stack;
+    color: $text-color;
+    border-bottom: 1px solid #62d1ba;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    align-items: flex-start;
+    margin-bottom: 42px;
+  }
+
+  &__address {
+    padding: 0;
+    margin-right: 32px;
+  }
+
+  &__text {
+    width: 136px;
+  }
+
+  &__map {
+    margin-bottom: 38px;
+  }
+
+  &__write {
+    text-decoration: none;
+    padding: 15px 56px;
+  }
+}
