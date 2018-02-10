@@ -69,17 +69,12 @@
   .contacts-data__contacts {
     display: flex;
     flex-direction: column;
+    background-color: #f1f1f1;
     width: 668px;
   }
 
   .contacts-data__title {
     margin-right: 167px;
-  }
-
-  .contacts-data__contacts {
-    display: flex;
-    width: 668px;
-    background-color: #f1f1f1;
   }
 
   .contacts-data__dop-info {
@@ -103,16 +98,12 @@
 
   .contacts-data__fio-field {
     width: 1050px;
-}
-
-.contacts-data__contacts {
-    width: 1050px;
   }
 
   .contacts-data__contacts {
     width: 1050px;
   }
-
+  
   .contacts-data__dop-info {
     width: 1050px;
   }

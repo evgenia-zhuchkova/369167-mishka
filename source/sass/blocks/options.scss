@@ -1,6 +1,6 @@
 @media (min-width: $tablet-width) {
   .options {
-    padding:0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -57,9 +57,9 @@
     font-size: 15px;
     font-weight: 700;
     line-height: $line-height;
-    }
+  }
 
-    .options__link--i {
+  .options__link--i {
     font: $font-stack;
     color: #000000;
     font-size: 15px;
