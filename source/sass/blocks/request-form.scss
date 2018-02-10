@@ -29,6 +29,7 @@
   }
 
   &__type {
+    padding: 0;
     font-family: $font-stack;
     font-size: 17px;
     font-weight: 700;
@@ -38,6 +39,7 @@
   }
 
   &__color {
+    padding: 0;
     font-family: $font-stack;
     font-size: 17px;
     font-weight: 700;
@@ -53,5 +55,111 @@
 
   &__button {
     padding: 17px 45px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .request-form {
+    min-width: 768px;
+  }
+  
+  .request-form__wrapper {
+    width: 668px;
+  }
+  
+  .request-form__text {
+    width: 616px;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: left;
+  }
+  
+  .request-form__form {
+    width: 668px;
+  }
+  
+  .request-form__type {
+    display: flex;
+    flex-direction: row;
+    width: 668px;
+    margin-bottom: 36px;
+  }
+  
+  .request-form__type-list {
+    display: flex;
+    flex-direction: column;
+    width: 504px;
+    justify-content: flex-end;
+    margin-left: 167px;
+    margin-bottom: 0;
+    margin-top: -27px;
+  }
+  .request-form__name {
+    margin-top: 10px;
+  }
+  
+  .request-form__name--color {
+    margin-top: 67px;
+  }
+  
+  .request-form__color {
+    display: flex;
+    flex-direction: row;
+    width: 668px;
+    margin-bottom: 36px;
+    background-color: #f1f1f1;
+  }
+  
+  .request-form__color-list {
+    display: flex;
+    flex-direction: column;
+    width: 504px;
+    justify-content: flex-end;
+    margin-left: 167px;
+    margin-bottom: 0;
+    margin-top: -27px;
+  }
+  
+  .request-form__button {
+    padding: 17px 32px;
+  }
+}
+  
+@media (min-width: $desktop-width) {
+  .request-form {
+    min-width: 1150px;
+  }
+  
+  .request-form__wrapper {
+    width: 1050px;
+  }
+  
+  .request-form__text {
+    width: 616px;
+    margin-left: 175px;
+  }
+  
+  .request-form__form {
+    width: 1050px;
+  }
+  
+  .request-form__type {
+    width: 1050px;
+  }
+  
+  .request-form__type-list {
+    width: 711px;
+  }
+  
+  .request-form__color {
+    width: 1050px;
+  }
+  
+  .request-form__color-list {
+    width: 711px;
+  }
+  
+  .request-form__button {
+    margin-left: 175px;
   }
 }

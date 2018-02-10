@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  width: 260px;
   flex-direction: column;
   align-items: center;
 
@@ -11,13 +12,13 @@
     display: flex;
     min-height: 78px;
     align-items: center;
-    width: 320px;
+    width: 260px;
   }
 
   &__item-search ::before {
     content: "";
     position: absolute;
-    top: 31px;
+    top: 28px;
     left: 23px;
     width: 18px;
     height: 18px;
@@ -33,13 +34,13 @@
     display: flex;
     min-height: 78px;
     align-items: center;
-    width: 320px;
+    width: 260px;
   }
 
   &__item-cart ::before {
     content: "";
     position: absolute;
-    top: 31px;
+    top: 28px;
     left: 23px;
     width: 18px;
     height: 18px;
@@ -58,5 +59,99 @@
     text-decoration: none;
     display: block;
     margin-left: 76px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: flex;
+    flex-direction: row;
+    width: 334px;
+    height: auto;
+    justify-content: flex-end;
+  }
+  
+  .user-list__item-search {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 36px;
+    height: auto;
+    margin-right: 55px;
+  }
+  
+  .user-list__item-search ::before {
+    position: absolute;
+    left: 0;
+  }
+  
+  .user-list__link {
+    margin-left: 34px;
+    white-space: nowrap;
+  }
+  
+  .user-list__link--i {
+    margin: 0;
+    padding: 0;
+    margin-left: 32px;
+    width: 0;
+    overflow: hidden;
+    }
+  
+  .user-list__item-cart {
+    position: relative;
+    width: auto;
+  }
+  
+  .user-list__item-cart ::before {
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+  } 
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    display: flex;
+    flex-direction: row;
+    width: 322px;
+    justify-content: flex-start;
+  }
+  
+  .user-list__item-search {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 36px;
+    margin-right: 55px;
+  }
+  
+  .user-list__item-search ::before {
+    position: absolute;
+    left: 0;
+  }
+  
+  .user-list__link {
+    margin-left: 34px;
+    white-space: nowrap;
+  }
+  
+  .user-list__link--i {
+    margin: 0;
+    padding: 0;
+    margin-left: 32px;
+    overflow: hidden;
+    }
+  
+  .user-list__item-cart {
+    position: relative;
+  }
+  
+  .user-list__item-cart ::before {
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
   }
 }

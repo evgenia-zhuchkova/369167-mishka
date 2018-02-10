@@ -2,7 +2,10 @@
   display: flex;
   min-width: 320px;
   justify-content: center;
+  align-items: center;
   background-color: #f1f1f1;
+  margin-bottom: 30px;
+  
 
   &__wrapper {
     display: flex;
@@ -18,5 +21,37 @@
     color: $boldtype-color;
     margin-top: 72px;
     margin-bottom: 71px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods {
+    min-width: 768px;
+    margin-bottom: 79px;
+  }
+  
+  .goods__wrapper {
+    width: 668px;
+  }
+  
+  .goods__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods {
+    min-width: 1150px;
+    margin-bottom: 130px;
+  }
+  
+  .goods__wrapper {
+    width: 1050px;
+  }
+  
+  .goods__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

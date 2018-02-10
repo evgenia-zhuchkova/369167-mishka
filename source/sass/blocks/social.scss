@@ -3,22 +3,53 @@
   flex-direction: row;
   margin-top: 30px;
   margin-botom: 52px;
-
+  width: 143px;
+  height: 30px;
+  padding: 0;
+  
   &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
-    margin-right: 38px;
+    padding: 0;
   }
-}
-
-@for $i from 1 through length($social-icon) {
-  .social__link--#{$i} {
-    background-image: nth($social-icon, $i);
+  
+  &__item--instagram {
+    position: relative;
+  }
+  
+  &__link--instagram {
+    position: absolute;
+    background: url("../img/icon-insta.svg");
     background-repeat: no-repeat;
-    width: 30px;
+    width: 28px;
+    height: 25px;
+    top: -11px;
+  }
+  
+  &__item--facebook {
+    position: relative;
+  }
+  
+  &__link--facebook {
+    position: absolute;
+    background: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
+    width: 22px;
     height: 30px;
-    background-position: center;
+    left: 60px;
+    top: -14px;
+  }
+  
+  &__item--twitter {
+    position: relative;
+  }
+  
+  &__link--twitter {
+    position: absolute;
+    background: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 25px;
+    left: 118px;
+    top: -12px; 
   }
 }

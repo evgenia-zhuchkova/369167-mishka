@@ -2,15 +2,16 @@
   margin: 0;
   padding: 0;
   display: flex;
+  width: 260px;
   flex-direction: column;
   align-items: center;
 
   &__item {
     display: flex;
     border-top: 1px solid #ececec;
-    min-height: 78px;
+    height: 78px;
     align-items: center;
-    width: 320px;
+    width: 260px;
   }
 
   &__link {
@@ -22,5 +23,40 @@
     text-decoration: none;
     display: block;
     margin-left: 76px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    width: 334px;
+    position: absolute;
+    z-index: 3;
+    margin-top: 78px;
+  }
+  
+  .site_list__item {
+    margin-right: 36px;  
+  }
+  
+  .site-list__link {
+    white-space: nowrap;
+    margin-left: 0px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    position: static;
+    flex-direction: row;
+    width: 404px;
+    margin-right: 70px;
+    margin-top: 0;
+  }
+  
+  .site-list__link {
+    white-space: nowrap;
+    margin-left: 0px;
   }
 }

@@ -57,3 +57,17 @@
     margin-left: 30px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .variant {
+    width: 668px;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .variant {
+    width: 1050px;
+    flex-direction: row;
+  }
+}

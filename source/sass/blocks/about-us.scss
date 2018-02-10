@@ -4,6 +4,7 @@
   min-width: 320px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 54px;
 
   &__wrapper {
     display: flex;
@@ -25,5 +26,41 @@
   &__list {
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    min-width: 768px;
+  }
+  
+  .about-us__wrapper {
+    width: 668px;
+  }
+  
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  
+  .about-us__list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    min-width: 1150px;
+  }
+  
+  .about-us__wrapper {
+    width: 1050px;
+  }
+  
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 175px;
   }
 }

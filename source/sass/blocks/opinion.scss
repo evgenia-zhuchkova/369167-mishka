@@ -26,7 +26,7 @@
 
   &__list {
     display: flex;
-    min-width: 260px;
+    width: 260px;
   }
 
   &__item {
@@ -38,18 +38,21 @@
   }
 
   &__text {
+    margin: 0;
     text-align: left;
     width: 260px;
     margin-bottom: 36px;
   }
 
   &__author {
+    margin: 0;
     font-size: 17px;
     line-height: 24px;
     margin-bottom: 10px;
   }
 
   &__contact {
+    margin: 0;
     font-size: 17px;
     margin-bottom: 34px;
   }
@@ -60,10 +63,12 @@
     margin-bottom: 38px;
   }
 
-  &__write {
-    text-decoration: none;
-    padding: 15px 79px;
-    margin-bottom: 43px;
+  &__control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
   }
 
   &__prev {
@@ -85,5 +90,86 @@
     background-position: center;
     height: 50px;
     width: 130px;
+  }
+  
+  &__write {
+    text-decoration: none;
+    padding: 15px 79px;
+    margin-bottom: 43px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .opinion {
+    min-width: 768px;
+  }
+  
+  .opinion__wrapper {
+    min-width: 668px;
+  }
+  
+  .opinion__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 56px;
+  }
+  
+  .opinion__list {
+    position: relative;
+  }
+  
+  .opinion__text {
+    font-size: 17px;
+    line-height: 30px;
+    width: 643px;
+    margin-bottom: 65px;
+  }
+  
+  .opinion__control {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    position: absolute;
+    z-index: 10;
+    align-self: flex-end;
+  }
+  
+  .opinion__write {
+    padding: 15px 39px;
+    margin-bottom: 237px;
+  }
+  
+  .opinion__prev {
+    border: none;
+    width: 72px;
+    height: 28px;
+  }
+  
+  .opinion__next {
+    border: none;
+    width: 72px;
+    height: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .opinion {
+    min-width: 1150px;
+    margin-bottom: 144px;
+  }
+  
+  .opinion__wrapper {
+    min-width: 1050px;
+  }
+  
+  .opinion__list {
+    margin-left: 175px;
+  }
+  
+  .opinion__title {
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

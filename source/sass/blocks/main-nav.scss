@@ -1,33 +1,105 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid $decor-color;
   position: relative;
 
   &__toggle {
+    position: absolute;
     background-image: url("../img/icon-menu-open.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 22px;
     height: 18px;
     align-self: center;
+    z-index: 1;
+    margin-top: -53px;
+    align-self: flex-end;
   }
-
-  &__wrapper {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    z-index: 3;
-    top: 50px;
-    left: -270px;
-    height: 315px;
-    width: 320px;
-  }
-
+  
   &__list {
     list-style: none;
+   }
+  
+  &__logo-wrapper {
+    display: none;
+  }
+  
+  &__options {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 668px;
+    height: auto;
+  }
+  
+  .main-nav__toggle {
+    display: none;
+  }
+  
+  .main-nav__list {
+    display: flex;
+    width: 668px;
+    height: auto;
+    flex-direction: row;
+  }
+  
+   .main-nav__logo-wrapper {
+    display: flex;
+    align-items: center;
+    width: 149px;
+    height: 72px;
+    margin-right: 0;
+  }
+  
+  .main-nav__options {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1050px;
+  }
+  
+  .main-nav__toggle {
+    display: none;
+  }
+  
+  .main-nav__list {
+    display: flex;
+    width: 450px;
+    flex-direction: row;
+  }
+  
+  .main-nav__logo-wrapper {
+    display: flex;
+    align-items: center;
+    width: 149px;
+    height: 72px;
+    margin-right: 126px;
+  }
+  
+  .main-nav__options {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: 1050px;
   }
 }
