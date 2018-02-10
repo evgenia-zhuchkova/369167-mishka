@@ -6,16 +6,16 @@
   width: 143px;
   height: 30px;
   padding: 0;
-  
+
   &__item {
     list-style: none;
     padding: 0;
   }
-  
+
   &__item--instagram {
     position: relative;
   }
-  
+
   &__link--instagram {
     position: absolute;
     background: url("../img/icon-insta.svg");
@@ -24,11 +24,11 @@
     height: 25px;
     top: -11px;
   }
-  
+
   &__item--facebook {
     position: relative;
   }
-  
+
   &__link--facebook {
     position: absolute;
     background: url("../img/icon-fb.svg");
@@ -38,11 +38,11 @@
     left: 60px;
     top: -14px;
   }
-  
+
   &__item--twitter {
     position: relative;
   }
-  
+
   &__link--twitter {
     position: absolute;
     background: url("../img/icon-twitter.svg");
