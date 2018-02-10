@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     width: 260px;
-    border: 1px solid $decor-color;  
+    border: 1px solid $decor-color;
   }
 
   &__video {
@@ -69,7 +69,7 @@
   }
 
   .production__video {
-    width: 668px; 
+    width: 668px;
   }
 
   .production__info {
@@ -120,7 +120,7 @@
     display: flex;
     width: 234px;
     align-self: flex-end;
-    flex-direction: column; 
+    flex-direction: column;
     position: absolute;
     z-index: 9;
     margin-top: -88px;
